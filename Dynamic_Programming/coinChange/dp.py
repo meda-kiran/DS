@@ -9,6 +9,7 @@ def coinChange(sum,d):
             if d[j]<=i and table[i-d[j]]!=99999:
                 table[i]=min(table[i],table[i-d[j]])
         table[i]=table[i]+1
+    print table
     return table[sum]
 
 sum=100
